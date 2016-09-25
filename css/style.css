@@ -1,0 +1,398 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body{
+  background: #f0e9da;
+  font-family: "Helvetica";
+}
+
+.wrapper{
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+}
+
+header{
+  width: 100%;
+  background-color: #4dae75;
+  height: 400px;
+  background-image: url('../imgs/anmelden_bckg.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-top: 50px;
+}
+
+header a{
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 146px);
+}
+
+header h1{
+  font-size: 30px;
+  width: 50%;
+  margin-left: 4%;
+  color: white;
+  font-weight: bold;
+  padding-top: 140px;
+  line-height: 1.6;
+  margin-right: 2%;
+}
+
+
+header button{
+  width: 198px;
+  height: 48px;
+  border: none;
+  background-color: #c74a4a;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 4%;
+  margin-top: 45px;
+  border-radius: 3px;
+}
+
+header button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+/*content*/
+.content{
+  padding-top: 50px;
+  padding-bottom: 60px;
+  color: #434342;
+  background: #fff;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.left_side{
+  margin-left: 2%;
+  font-size: 14px;
+  width: 49%;
+  float: left;
+}
+
+.left_side p{
+  margin-bottom: 35px;
+}
+
+.left_side h2{
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 75px;
+}
+
+.left_side b{
+  color:#4daf75;
+}
+
+.right_side{
+  width: 42%;
+  margin-right: 2%;
+  float: right;
+  font-size: 18px;
+  color:#4daf75;
+}
+
+.right_side input{
+  width: 98%;
+  border-width: 2px;
+  border-color: rgb(225, 225, 225);
+  border-style: solid;
+  border-radius: 6px;
+  height: 42px;
+  margin-top: 7px;
+  margin-bottom: 30px;
+  padding-left: 2%;
+  font-size: 28px;
+  color: #434342;
+}
+
+.right_side form>div p{
+  float: right;
+  color: #434342;
+  font-size: 14px;
+}
+
+.right_side em{
+  color: #c74a4a;
+}
+
+.right_side button{
+  border-radius: 6px;
+  background-color: rgb(154, 154, 154);
+  width: 208px;
+  height: 42px;
+  border: 0;
+  color: white;
+  font-size: 15px;
+}
+
+.right_side button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+  color: #000;
+}
+
+/*FOOTER*/
+footer{
+  background-color: #ded6c7;
+  overflow: hidden;
+  padding: 0 2%;
+  color: #434342;
+}
+
+footer li{
+  float: left;
+}
+
+footer a{
+  font-size: 18px;
+  color: #434342;
+  margin-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  
+}
+
+footer a:hover{
+  color: #4daf75;
+}
+
+footer>div{
+  float: left;
+  height: 100%;
+}
+
+footer p{
+  float: right;
+  font-size: 14px;
+   margin-top: 22px;
+}
+
+@media (max-width: 1380px){
+  header h1{
+    width: 40%;
+    padding-top: 90px;
+  }
+}
+@media (max-width: 1200px){
+  header {
+      height: 300px;
+      margin-top: 50px;
+      background-size: contain;
+  }
+  header h1{
+    padding-top: 70px;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  header button {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  header a{
+    top: -70px;
+  }
+
+  .left_side h2 {
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+
+  .left_side p {
+    margin-bottom: 25px;
+  }
+
+}
+
+@media (max-width: 950px){
+  .left_side br{display: none;}
+}
+
+@media (max-width: 900px){
+  header {
+    height: 250px;
+    margin-top: 55px;
+  }
+  header button {
+    font-size: 18px;
+    margin-top: 7px;
+    width: 180px;
+    height: 40px;
+  }
+  header h1 {
+    padding-top: 44px;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  header a{
+    top: -75px;
+  }
+  footer p{
+    width: 100%;
+    text-align: center;
+  } 
+  footer p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 769px){
+  .content {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .right_side input {
+    margin-bottom: 20px;
+  }
+  .left_side h2 {
+    margin-bottom: 20px;
+  }
+  .left_side{
+    font-size: 16px;
+  }
+  header{
+    background-image: url('../imgs/mobile_bckg.png');
+    background-color: #4dae75;
+    height: auto;
+    background-size: 300px;
+    background-position: center 70px;
+  }
+  header h1 {
+    padding-top: 305px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  header button{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .left_side, .right_side{
+    width: 80%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .left_side{margin-left: 10%;
+    border-bottom: 3px #4daf75 solid;
+    margin-bottom: 20px;
+  }
+
+  .right_side{
+    margin-right: 10%;
+    position: relative;
+ }
+  
+  .right_side form>div p{
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+  .wrapper {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 470px){
+  .wrapper {
+    width: 100%;
+    margin:0;
+  }
+
+  .left_side, .right_side{
+    width: 92%;
+  }
+
+  .left_side{margin-left: 4%;}
+
+  .right_side{margin-right: 4%;}
+
+  header h1 {
+    width: 94%;
+    margin-left: 3%;
+  }
+
+  header button {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  header{
+    margin-top: 35px;
+  }
+
+  header a{
+    top: -55px;
+  }
+}
